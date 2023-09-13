@@ -12,3 +12,4 @@
 
 `./2.extract_promoters.sh extract protein_coding_Up > sample_output.fasta`
 
+**Required tools:** _SAMtools_
