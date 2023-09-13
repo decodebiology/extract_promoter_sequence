@@ -2,11 +2,11 @@
 
 ## Step 1: Prepare gene annotation table from GTF file
 
-`Rscript 1.GTFtoTable.R ensembl[OR 'gencode'] https://ftp.ensembl.org/pub/release-84/gtf/homo_sapiens/Homo_sapiens.GRCh38.84.chr.gtf.gz`
+`Rscript 1.GTFtoTable.R ensembl https://ftp.ensembl.org/pub/release-84/gtf/homo_sapiens/Homo_sapiens.GRCh38.84.chr.gtf.gz`
 <br><br>
 OR
 <br><br>
-`Rscript 1.GTFtoTable.R ensembl[OR 'gencode'] https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_25/gencode.v25.basic.annotation.gtf.gz`
+`Rscript 1.GTFtoTable.R gencode https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_25/gencode.v25.basic.annotation.gtf.gz`
 
 ## Step 2: Prepare genome from Ensembl
 
