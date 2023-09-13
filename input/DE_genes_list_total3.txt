@@ -1,0 +1,10 @@
+Rp1	protein_coding
+Sox17	protein_coding
+Tcea1	protein_coding
+Rgs20	protein_coding
+Oprk1	protein_coding
+Rb1cc1	protein_coding
+Gm16041	noncoding
+Gm36965	noncoding
+Gm22463	noncoding
+Gm37429	noncoding
