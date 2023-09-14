@@ -24,7 +24,7 @@ if(gtf_source=="gencode"){
 colnames(xanot)[4] <- "chromosome"
 colnames(xanot)[3] <- "gene_biotype"
 colnames(xanot)[1] <- "Geneid"
-
+xanot$chromosome <- gsub("chr","",xanot$chromosome) 
 write.table(xanot, "./annotation/gene_annotation.txt", sep="\t", quote=F, row.names=F)
 ## R script (END)
 ## Please run 2.extract_promoters.sh after this script

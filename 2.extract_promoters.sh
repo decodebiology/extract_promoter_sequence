@@ -21,7 +21,7 @@ then
 	echo "## Preparing Genome file. This might take a while";
 	wget $url -P ./annotation/ -O ./annotation/genome.fa.gz ;
 	gzip -d ./annotation/genome.fa.gz ;
-	#sed -i 's/^>/>chr/g' ./annotation/genome.fa.gz;
+	sed -i 's/^>chr/>/g' ./annotation/genome.fa;
 fi
 
 if [ $1 == "extract" ]
@@ -63,8 +63,8 @@ then
 			pstart=$(($end-$size));
 			pend=$(($end+$size));
 		fi
-		samtools faidx --continue $ref $chromosome:$pstart-$pend | sed "s/>$chromosome:$pstart-$pend/>${oname} chr$chromosome:$pstart-$pend/"; #; promoter chr$chromosome:${pstart}-${pend}/"; # if chromosome numbers are 1,2,3 etc.,
-		#samtools faidx --continue $ref chr$chromosome:$pstart-$pend | sed "s/>chr$chromosome:$pstart-$pend/>${oname} $chromosome:$pstart-$pend/"; #; promoter chr$chromosome:${pstart}-${pend}/"; # if chromosome numbers are chr1,chr2,chr3 etc.,
+		samtools faidx --continue $ref $chromosome:$pstart-$pend | sed "s/>$chromosome:$pstart-$pend/>${oname} chr$chromosome:$pstart-$pend/";
+
 	done
 	## Bash script (END)
 
