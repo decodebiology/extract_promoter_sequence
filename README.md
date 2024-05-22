@@ -8,7 +8,7 @@ OR
 <br><br>
 `Rscript 1.GTFtoTable.R gencode https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_25/gencode.v25.basic.annotation.gtf.gz`
 
-# Step 2: Prepare genome from Ensembl
+# Step 2: Prepare genome from Ensembl/GENCODE
 
 `./2.extract_promoters.sh prepare_genome https://ftp.ensembl.org/pub/release-84/fasta/homo_sapiens/dna/Homo_sapiens.GRCh38.dna.primary_assembly.fa.gz # Ensembl`
 <br><br>
